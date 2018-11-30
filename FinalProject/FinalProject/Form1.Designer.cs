@@ -64,6 +64,19 @@
             "USB",
             "Java Wally\'s"});
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Salsa\'s",
+            "Cantina and Grill",
+            "Crossroads",
+            "Nathan\'s",
+            "Brick City",
+            "RITZ",
+            "Gracie\'s",
+            "Beanz",
+            "College Grind",
+            "Commons",
+            "Midnight Oil",
+            "Java Wally\'s"});
             this.comboBox1.Location = new System.Drawing.Point(279, 140);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(201, 21);
