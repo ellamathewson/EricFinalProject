@@ -98,6 +98,7 @@
             // 
             this.labelRIT.AutoSize = true;
             this.labelRIT.Font = new System.Drawing.Font("Baskerville Old Face", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRIT.ForeColor = System.Drawing.Color.OrangeRed;
             this.labelRIT.Location = new System.Drawing.Point(12, 9);
             this.labelRIT.Name = "labelRIT";
             this.labelRIT.Size = new System.Drawing.Size(317, 43);
