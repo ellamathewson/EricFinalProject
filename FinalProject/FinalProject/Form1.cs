@@ -25,6 +25,7 @@ namespace FinalProject
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             String answer = comboBox1.Text;
+            foodAnswer.Text = answer;
         }
     }
 }

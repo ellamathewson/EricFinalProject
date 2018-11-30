@@ -30,6 +30,7 @@
         {
             this.title = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.foodAnswer = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // title
@@ -83,12 +84,21 @@
             this.comboBox1.TabIndex = 2;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
+            // foodAnswer
+            // 
+            this.foodAnswer.AutoSize = true;
+            this.foodAnswer.Location = new System.Drawing.Point(188, 253);
+            this.foodAnswer.Name = "foodAnswer";
+            this.foodAnswer.Size = new System.Drawing.Size(0, 13);
+            this.foodAnswer.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.foodAnswer);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.title);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -103,6 +113,7 @@
 
         private System.Windows.Forms.Label title;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label foodAnswer;
     }
 }
 
