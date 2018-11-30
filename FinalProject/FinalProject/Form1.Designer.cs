@@ -66,6 +66,7 @@
             "The Cantina",
             "USB",
             "Java Wally\'s"});
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
@@ -99,6 +100,7 @@
             // 
             this.labelRIT.AutoSize = true;
             this.labelRIT.Font = new System.Drawing.Font("Baskerville Old Face", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRIT.ForeColor = System.Drawing.Color.OrangeRed;
             this.labelRIT.Location = new System.Drawing.Point(12, 9);
             this.labelRIT.Name = "labelRIT";
             this.labelRIT.Size = new System.Drawing.Size(317, 43);
