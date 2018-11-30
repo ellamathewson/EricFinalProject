@@ -117,4 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAACMuAAAjLgAAAAAAAAAA
+        AAABdOf/AnPr/wB16P8AdOj/AnXo/wB05/8Cdef/AHPo/wJ06f8Cdej/AXTn/wB25/8Cc+v/AnXo/wB0
+        6P8AdOf/AHTn/wABAP8BAQH/AAAD/wB06f8AdOf/A3Tp/wB05/8AdOn/AHPo/wB06f8Ac+r/AHXo/wBz
+        5v8Adej/A3Xn/wJz5/8FAAH/1drY/9TZ1/8CAAD/AAEA/wAAAP8Adej/AHPo/wJ16P8Ac+j/AXTn/wBz
+        5v8Bder/AXTn/wJz6/8AdOf/AAEC/9TX3P/X2dr/1tjZ/9Xa2P/V2dr/AAAA/wEBAf8AAAD/AHXo/wFy
+        6v8Cdej/AHPo/wB06P8BdOf/AXPo/wAAAP/Z2dn/1dna/9TY2f/W2Nj/1tnX/9XZ2v/Z2tj/19nZ/wAB
+        AP8CAAD/AAEA/wJz5/8Cdej/AXTn/wJ16P8AAQD/AHTn/wN06P/V29r/1dna/9Xa2f/X2tj/1NnY/9XZ
+        2v/W2Nn/1djc/9Xa2f8AAQD/AAAB/wF05/8Ac+j/AgAB/9fZ2f/U2dr/AnXo/wB05/8Bdez/19nZ/9XZ
+        2v/U2Nn/19rY/9XZ2v/U2Nn/AXbp/wIAAP8Adej/AHTp/wABAP/X2dn/0tra/9na2P/X2dn/1tjZ/wB1
+        6P8AdOf/AnTp/9fZ2v/V2tn/19nZ/wFz6P8AAAH/A3To/wJ06f8AAAH/1drZ/9bY2P/X2dn/1NrZ/9TY
+        2f/Y2Nj/1drZ/9fa2P8BdOf/AHTr/wJ06f8CdOb/BAAA/wB05/8BdOb/AAAA/wIAAf8AAQD/19nZ/9bZ
+        1//U2Nn/1drZ/9PY2//X2dr/2dnZ/9ba1f/V2dr/AHXo/wAAAP8AdOn/AHbn/wBz6v8AAQD/A3To/wAA
+        AP8AAAP/AAEA/9Xa2P/Z2dn/19nZ/9Pa1//V2Nz/1tjY/wB05/8BAQH/AHTn/wJz5/8AdOv/AHPo/wAA
+        Af8Ac+j/BHPn/wJ16P8AAAD/AgAB/wIAAf/V2tj/19na/9Ta2f8CdOn/AAAA/wB16P8AdOn/AXTn/wF0
+        5/8Adej/AAEA/wB16P8Bc+j/AHXo/wB15v8Adej/AAAB/wMBAP8AAQD/AXTn/wIAAP8Bc+j/AHTp/wB0
+        5/8Adej/AHXm/wFy6/8AAQD/AHXo/wJ06f8Adej/AXPo/wF05/8BdOf/A3Xq/wAAAP8AAAD/AHPo/wJz
+        5/8AdOn/AnXn/wF05/8AdOv/AXPo/wEABP8AAAD/AAAB/wAAAP8CAAD/AAAA/wIAAf8AAAH/AHTp/wB0
+        6f8Aden/AXTn/wB06f8Adej/AHTn/wN06P8BdOf/AnTp/wJ16P8Cdej/AHXp/wN06f8Adeb/AHTn/wJz
+        5/8AdOn/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAA==
+</value>
+  </data>
 </root>
