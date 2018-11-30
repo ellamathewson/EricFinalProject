@@ -32,6 +32,13 @@ namespace FinalProject
         {
             var time = DateTime.Now.ToString("h:mm");
             label1.Text = time;
+          
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            
+            label1.Text = DateTime.Now.ToString("h:mm:ss");
         }
     }
 }
