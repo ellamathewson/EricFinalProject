@@ -31,15 +31,16 @@
             this.title = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.foodAnswer = new System.Windows.Forms.Label();
+            this.labelRIT = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // title
             // 
             this.title.AutoSize = true;
-            this.title.Font = new System.Drawing.Font("Baskerville Old Face", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.title.Location = new System.Drawing.Point(179, 35);
+            this.title.Font = new System.Drawing.Font("Ebrima", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title.Location = new System.Drawing.Point(158, 57);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(433, 54);
+            this.title.Size = new System.Drawing.Size(469, 65);
             this.title.TabIndex = 0;
             this.title.Text = "Line Length Program";
             this.title.Click += new System.EventHandler(this.label1_Click);
@@ -64,6 +65,7 @@
             "The Cantina",
             "USB",
             "Java Wally\'s"});
+            this.comboBox1.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Salsa\'s",
@@ -80,7 +82,7 @@
             "Java Wally\'s"});
             this.comboBox1.Location = new System.Drawing.Point(279, 140);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(201, 21);
+            this.comboBox1.Size = new System.Drawing.Size(201, 25);
             this.comboBox1.TabIndex = 2;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -92,18 +94,30 @@
             this.foodAnswer.Size = new System.Drawing.Size(0, 13);
             this.foodAnswer.TabIndex = 3;
             // 
+            // labelRIT
+            // 
+            this.labelRIT.AutoSize = true;
+            this.labelRIT.Font = new System.Drawing.Font("Baskerville Old Face", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRIT.Location = new System.Drawing.Point(12, 9);
+            this.labelRIT.Name = "labelRIT";
+            this.labelRIT.Size = new System.Drawing.Size(317, 43);
+            this.labelRIT.TabIndex = 4;
+            this.labelRIT.Text = "RIT Dining Services";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelRIT);
             this.Controls.Add(this.foodAnswer);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.title);
+            this.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Line Length at RIT";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -114,6 +128,7 @@
         private System.Windows.Forms.Label title;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label foodAnswer;
+        private System.Windows.Forms.Label labelRIT;
     }
 }
 
