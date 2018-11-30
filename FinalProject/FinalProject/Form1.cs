@@ -27,5 +27,11 @@ namespace FinalProject
             String answer = comboBox1.Text;
             foodAnswer.Text = answer;
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            var time = DateTime.Now.ToString("h:mm");
+            label1.Text = time;
+        }
     }
 }
