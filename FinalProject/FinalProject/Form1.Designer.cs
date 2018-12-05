@@ -36,6 +36,7 @@
             this.labelRIT = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.debug = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // title
@@ -125,12 +126,23 @@
             this.timer.Interval = 1000;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
+            // debug
+            // 
+            this.debug.AutoSize = true;
+            this.debug.Location = new System.Drawing.Point(444, 362);
+            this.debug.Name = "debug";
+            this.debug.Size = new System.Drawing.Size(37, 13);
+            this.debug.TabIndex = 6;
+            this.debug.Text = "label2";
+            this.debug.Click += new System.EventHandler(this.label2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.debug);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelRIT);
             this.Controls.Add(this.foodAnswer);
@@ -155,6 +167,7 @@
         private System.Windows.Forms.Label labelRIT;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Label debug;
     }
 }
 
