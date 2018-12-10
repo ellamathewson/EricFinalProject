@@ -24,6 +24,8 @@ namespace FinalProject
         //foodAnswer.Text = hour.ToString();
 
 
+
+
         DayOfWeek dt = DateTime.Today.DayOfWeek;
         //foodAnswer.Text = "the day of the week is " + dt;
 
@@ -86,7 +88,7 @@ namespace FinalProject
                     if (answer == "Crossroads" || answer == "Brick City"|| answer == "Ctrl Alt DELi" ) //add restaurant name
                     {
                         foodAnswer.Text = answer + closed;
-                    }
+                    } else { 
                     checkTime(12, 0, "Commons");
                     checkTime(12, 20, "Salsa's");
                     checkTime(7, 18, "Artesano");
@@ -97,19 +99,21 @@ namespace FinalProject
                     checkTime(7, 20, "Gracie's");
                     checkTime(11, 21, "Java Wally's");
                     checkTime(10, 0, "Midnight Oil");
+                    }
                     break;
 
                 case DayOfWeek.Sunday:
                     if (answer == "Salsa's" || answer == "RITZ" || answer == "Brick City" || answer == "Artesano" || answer == "Beanz"|| answer == "Brick City" || answer == "Ctrl Alt DELi" || answer == "Hissho Sushi" || answer == "Global Grill") //add restaurant name
                     {
                         foodAnswer.Text = answer + closed;
-                    }
+                    } else { 
                     checkTime(12, 0, "Commons");
                     checkTime(9, 21, "College Grind");
                     checkTime(12, 20, "Crossroads");
                     checkTime(11, 19, "Gracie's");
                     checkTime(11, 21, "Java Wally's");
                     checkTime(10, 0, "Midnight Oil");
+                    }
                     break;
 
 
@@ -165,15 +169,18 @@ namespace FinalProject
                 if (peakTime == true)
                 {
                     foodAnswer.Text = answer + open + longLine;
+                    debug.Text = hour.ToString();
                 }
                 else
                 {
                     foodAnswer.Text = answer + open + shortLine;
+                    debug.Text = hour.ToString();
                 }
             }
             else
             {
                 foodAnswer.Text = answer + closed;
+                debug.Text = hour.ToString();
             }
         }
     }
