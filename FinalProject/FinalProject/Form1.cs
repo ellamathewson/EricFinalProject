@@ -55,30 +55,61 @@ namespace FinalProject
                     checkTime(11, 21, "Salsa's");
                     checkTime(10, 22, "Crossroads");
                     checkTime(7, 18, "Artesano");
-
+                    checkTime(11, 23, "Beanz");
+                    checkTime(7, 14, "Brick City");
+                    checkTime(7, 21, "College Grind");
+                    checkTime(11, 0, "Commons");
+                    checkTime(7, 20, "Ctrl Alt DELi");
+                    checkTime(11, 21, "Hissho Sushi ");
+                    checkTime(11, 20, "Global Grill");
+                    checkTime(7, 20, "Gracie's");
+                    checkTime(7, 23, "Java Wally's");
+                    checkTime(7, 0, "Midnight Oil");
                     break;
                 case DayOfWeek.Friday:
                     checkTime(7, 17, "Artesano");
                     checkTime(11, 20, "Salsa's");
+                    checkTime(11, 23, "Beanz");
                     checkTime(10, 22, "Crossroads");
+                    checkTime(7, 14, "Brick City");
+                    checkTime(7, 21, "College Grind");
+                    checkTime(7, 18, "Ctrl Alt DELi");
+                    checkTime(11, 0, "Commons");
+                    checkTime(11, 20, "Hissho Sushi");
+                    checkTime(11, 20, "Global Grill");
+                    checkTime(7, 20, "Gracie's");
+                    checkTime(7, 21, "Java Wally's");
+                    checkTime(7, 0, "Midnight Oil");
                     break;
 
                 case DayOfWeek.Saturday:
-                    if (answer == "Crossroads" ) //add restaurant name
+                    if (answer == "Crossroads" || answer == "Brick City"|| answer == "Ctrl Alt DELi" ) //add restaurant name
                     {
                         foodAnswer.Text = answer + closed;
                     }
+                    checkTime(12, 0, "Commons");
                     checkTime(12, 20, "Salsa's");
                     checkTime(7, 18, "Artesano");
-
+                    checkTime(11, 23, "Beanz");
+                    checkTime(9, 21, "College Grind");
+                    checkTime(12, 20, "Hissho Sushi");
+                    checkTime(11, 15, "Global Grill");
+                    checkTime(7, 20, "Gracie's");
+                    checkTime(11, 21, "Java Wally's");
+                    checkTime(10, 0, "Midnight Oil");
                     break;
 
                 case DayOfWeek.Sunday:
-                    if (answer == "Salsa's" || answer == "RITZ" || answer == "Brick City" || answer == "Artesano") //add restaurant name
+                    if (answer == "Salsa's" || answer == "RITZ" || answer == "Brick City" || answer == "Artesano" || answer == "Beanz"|| answer == "Brick City" || answer == "Ctrl Alt DELi" || answer == "Hissho Sushi" || answer == "Global Grill") //add restaurant name
                     {
                         foodAnswer.Text = answer + closed;
                     }
+                    checkTime(12, 0, "Commons");
+                    checkTime(9, 21, "College Grind");
                     checkTime(12, 20, "Crossroads");
+                    checkTime(11, 19, "Gracie's");
+                    checkTime(11, 21, "Java Wally's");
+                    checkTime(10, 0, "Midnight Oil");
                     break;
 
 

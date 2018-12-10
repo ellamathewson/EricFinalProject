@@ -88,6 +88,7 @@
             "Java Wally\'s",
             "The Market",
             "Hissho Sushi",
+            "Ctrl Alt DELi",
             "Artesano"});
             this.comboBox1.Location = new System.Drawing.Point(279, 140);
             this.comboBox1.Name = "comboBox1";
