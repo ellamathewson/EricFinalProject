@@ -23,7 +23,7 @@ namespace FinalProject
         int hour;
         //foodAnswer.Text = hour.ToString();
 
-
+        DateTime time;
 
 
         DayOfWeek dt = DateTime.Today.DayOfWeek;
@@ -126,8 +126,8 @@ namespace FinalProject
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            var time = DateTime.Now.ToString("h:mm");
-            label1.Text = time;
+            time = DateTime.Now;
+            label1.Text = time.ToString("h:mm");
         }
 
         private void timer_Tick(object sender, EventArgs e)
@@ -143,7 +143,7 @@ namespace FinalProject
 
         private void checkTime(int startTime, int endTime, string name)
         {
-            hour = hourTime.Hour + 12;
+            hour = Convert.ToInt32(time);
             //debug.Text = hour.ToString();
             
 
@@ -180,7 +180,7 @@ namespace FinalProject
             else
             {
                 foodAnswer.Text = answer + closed;
-                debug.Text = hour.ToString();
+                debug.Text = time.ToString();
             }
         }
     }
