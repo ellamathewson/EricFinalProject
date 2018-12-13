@@ -18,6 +18,9 @@ namespace FinalProject
         string shortLine = " and the line is short. GO!";
         Boolean peakTime = false;
 
+        string dayOfWeek;
+
+
         string answer;
         //DateTime hourTime = new DateTime();
         int hour;
@@ -28,7 +31,6 @@ namespace FinalProject
         //nested dictionary from hell
 
 
-
         DayOfWeek dt = DateTime.Today.DayOfWeek;
         //foodAnswer.Text = "the day of the week is " + dt;
 
@@ -37,25 +39,7 @@ namespace FinalProject
             {
                 "Salsa's", new Dictionary<string, List<int>>
                 {
-                    {"Monday", new List<int>
-                        {
-                            // Monday-Thursday
-                            11, 21
-                        }
-                    },
-                    {"Tuesday", new List<int>
-                        {
-                            // Monday-Thursday
-                            11, 21
-                        }
-                    },
-                    {"Wednesday", new List<int>
-                        {
-                            // Monday-Thursday
-                            11, 21
-                        }
-                    },
-                    {"Thursday", new List<int>
+                    {"Weekday", new List<int>
                         {
                             // Monday-Thursday
                             11, 21
@@ -69,18 +53,48 @@ namespace FinalProject
                     },
                     {"Saturday", new List<int>
                         {
-                            // Monday-Thursday
+                            // Saturday
                             12, 20 
                         }
                     },
                     {"Sunday", new List<int>
                         {
-                            // Monday-Thursday
+                            // Sundays
                             0, 0 
                         }
                     }
                 }
+            },
+        {
+                "Midnight Oil", new Dictionary<string, List<int>>
+                {
+                    {"Weekday", new List<int>
+                        {
+                            // Monday-Thursday
+                            11, 21
+                        }
+                    },
+                    {"Friday", new List<int>
+                        {
+                            // Friday
+                            11, 20
+                        }
+                    },
+                    {"Saturday", new List<int>
+                        {
+                            // Saturday
+                            12, 20
+                        }
+                    },
+                    {"Sunday", new List<int>
+                        {
+                            // Sundays
+                            0, 0
+                        }
+                    }
+                }
             }
+
         };
 
         public Form1()
@@ -98,18 +112,20 @@ namespace FinalProject
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             answer = comboBox1.Text;
+            checkDayOfWeek();
+
 
             //debug.Text = dt.ToString();
-            
 
-            switch(dt)
+
+            switch (dt)
             {
                 case DayOfWeek.Monday:
                 case DayOfWeek.Tuesday:
                 case DayOfWeek.Wednesday:
                 case DayOfWeek.Thursday:
-                    int startTime = restaurant[answer][dt.ToString()][0];
-                    int endTime = restaurant[answer][dt.ToString()][1];
+                    int startTime = restaurant[answer][dayOfWeek][0];
+                    int endTime = restaurant[answer][dayOfWeek][1];
                     checkTime(startTime, endTime, answer);
 
                     break;
@@ -118,6 +134,30 @@ namespace FinalProject
                 case DayOfWeek.Saturday:
                     break;
                 case DayOfWeek.Sunday:
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        public void checkDayOfWeek()
+        {
+            switch(dt)
+            {
+                case DayOfWeek.Monday:
+                case DayOfWeek.Tuesday:
+                case DayOfWeek.Wednesday:
+                case DayOfWeek.Thursday:
+                    dayOfWeek = "Weekday";
+                    break;
+                case DayOfWeek.Friday:
+                    dayOfWeek = "Friday";
+                    break;
+                case DayOfWeek.Saturday:
+                    dayOfWeek = "Saturday";
+                    break;
+                case DayOfWeek.Sunday:
+                    dayOfWeek = "Sunday";
                     break;
                 default:
                     break;
