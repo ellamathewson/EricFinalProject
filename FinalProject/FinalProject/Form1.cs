@@ -93,7 +93,415 @@ namespace FinalProject
                         }
                     }
                 }
+
+
+            },
+
+            {
+                "Global Grille", new Dictionary<string, List<int>>
+                {
+                    {"Weekday", new List<int>
+                        {
+                            // Monday-Thursday
+                            11, 21
+                        }
+                    },
+                    {"Friday", new List<int>
+                        {
+                            // Friday
+                            11, 20
+                        }
+                    },
+                    {"Saturday", new List<int>
+                        {
+                            // Saturday
+                            12, 20
+                        }
+                    },
+                    {"Sunday", new List<int>
+                        {
+                            // Sundays
+                            0, 0
+                        }
+                    }
+                }
+
+
+            },
+            {
+                "Crossroads", new Dictionary<string, List<int>>
+                {
+                    {"Weekday", new List<int>
+                        {
+                            // Monday-Thursday
+                            11, 22
+                        }
+                    },
+                    {"Friday", new List<int>
+                        {
+                            // Friday
+                            11, 18
+                        }
+                    },
+                    {"Saturday", new List<int>
+                        {
+                            // Saturday
+                            0,0
+                        }
+                    },
+                    {"Sunday", new List<int>
+                        {
+                            // Sundays
+                            12, 20
+                        }
+                    }
+                }
+
+
+            },
+             {
+                "Nathan's", new Dictionary<string, List<int>>
+                {
+                    {"Weekday", new List<int>
+                        {
+                            // Monday-Thursday
+                            10, 18
+                        }
+                    },
+                    {"Friday", new List<int>
+                        {
+                            // Friday
+                            10, 17
+                        }
+                    },
+                    {"Saturday", new List<int>
+                        {
+                            // Saturday
+                            11, 14
+                        }
+                    },
+                    {"Sunday", new List<int>
+                        {
+                            // Sundays
+                            0,0
+                        }
+                    }
+                }
+
+
+            },
+
+                {
+                "Brick City", new Dictionary<string, List<int>>
+                {
+                    {"Weekday", new List<int>
+                        {
+                            // Monday-Thursday
+                            7, 14
+                        }
+                    },
+                    {"Friday", new List<int>
+                        {
+                            // Friday
+                            7, 14
+                        }
+                    },
+                    {"Saturday", new List<int>
+                        {
+                            // Saturday
+                            0, 0
+                        }
+                    },
+                    {"Sunday", new List<int>
+                        {
+                            // Sundays
+                            0,0
+                        }
+                    }
+                }
+
+
+            },
+                {
+                "RITZ", new Dictionary<string, List<int>>
+                {
+                    {"Weekday", new List<int>
+                        {
+                            // Monday-Thursday
+                           11 , 19
+                        }
+                    },
+                    {"Friday", new List<int>
+                        {
+                            // Friday
+                            11, 19
+                        }
+                    },
+                    {"Saturday", new List<int>
+                        {
+                            // Saturday
+                            0, 0
+                        }
+                    },
+                    {"Sunday", new List<int>
+                        {
+                            // Sundays
+                            0,0
+                        }
+                    }
+                }
+
+
+            },
+                {
+                "Gracie's", new Dictionary<string, List<int>>
+                {
+                    {"Weekday", new List<int>
+                        {
+                            // Monday-Thursday
+                            7, 19
+                        }
+                    },
+                    {"Friday", new List<int>
+                        {
+                            // Friday
+                            7, 19
+                        }
+                    },
+                    {"Saturday", new List<int>
+                        {
+                            // Saturday
+                            7, 19
+                        }
+                    },
+                    {"Sunday", new List<int>
+                        {
+                            // Sundays
+                            11,19
+                        }
+                    }
+                }
+
+
+            },
+                {
+                "Beanz", new Dictionary<string, List<int>>
+                {
+                    {"Weekday", new List<int>
+                        {
+                            // Monday-Thursday
+                            7, 23
+                        }
+                    },
+                    {"Friday", new List<int>
+                        {
+                            // Friday
+                            7, 23
+                        }
+                    },
+                    {"Saturday", new List<int>
+                        {
+                            // Saturday
+                            11, 23
+                        }
+                    },
+                    {"Sunday", new List<int>
+                        {
+                            // Sundays
+                            9,23
+                        }
+                    }
+                }
+
+
+            },
+             {
+                "College Grind", new Dictionary<string, List<int>>
+                {
+                    {"Weekday", new List<int>
+                        {
+                            // Monday-Thursday
+                            7, 21
+                        }
+                    },
+                    {"Friday", new List<int>
+                        {
+                            // Friday
+                            7, 21
+                        }
+                    },
+                    {"Saturday", new List<int>
+                        {
+                            // Saturday
+                            9, 21
+                        }
+                    },
+                    {"Sunday", new List<int>
+                        {
+                            // Sundays
+                            9, 21
+                        }
+                    }
+                }
+
+
+            },
+            {
+                "Commons", new Dictionary<string, List<int>>
+                {
+                    {"Weekday", new List<int>
+                        {
+                            // Monday-Thursday
+                            11, 24
+                        }
+                    },
+                    {"Friday", new List<int>
+                        {
+                            // Friday
+                            11, 24
+                        }
+                    },
+                    {"Saturday", new List<int>
+                        {
+                            // Saturday
+                            11, 24
+                        }
+                    },
+                    {"Sunday", new List<int>
+                        {
+                            // Sundays
+                            12, 24
+                        }
+                    }
+                }
+
+
+            },
+                  {
+                "Java Wally's", new Dictionary<string, List<int>>
+                {
+                    {"Weekday", new List<int>
+                        {
+                            // Monday-Thursday
+                            7, 22
+                        }
+                    },
+                    {"Friday", new List<int>
+                        {
+                            // Friday
+                            7, 21
+                        }
+                    },
+                    {"Saturday", new List<int>
+                        {
+                            // Saturday
+                            11, 21
+                        }
+                    },
+                    {"Sunday", new List<int>
+                        {
+                            // Sundays
+                            11, 21
+                        }
+                    }
+                }
+
+
+            },
+                  {
+                "Hissho Sushi", new Dictionary<string, List<int>>
+                {
+                    {"Weekday", new List<int>
+                        {
+                            // Monday-Thursday
+                            11, 21
+                        }
+                    },
+                    {"Friday", new List<int>
+                        {
+                            // Friday
+                            11, 20
+                        }
+                    },
+                    {"Saturday", new List<int>
+                        {
+                            // Saturday
+                            12, 20
+                        }
+                    },
+                    {"Sunday", new List<int>
+                        {
+                            // Sundays
+                            0,0
+                        }
+                    }
+                }
+
+
+            },  
+            {
+                "Ctrl Alt DELi", new Dictionary<string, List<int>>
+                {
+                    {"Weekday", new List<int>
+                        {
+                            // Monday-Thursday
+                            7, 20
+                        }
+                    },
+                    {"Friday", new List<int>
+                        {
+                            // Friday
+                            7, 15
+                        }
+                    },
+                    {"Saturday", new List<int>
+                        {
+                            // Saturday
+                            0,0
+                        }
+                    },
+                    {"Sunday", new List<int>
+                        {
+                            // Sundays
+                            0,0
+                        }
+                    }
+                }
+
+
+            },
+              {
+                "Artesano", new Dictionary<string, List<int>>
+                {
+                    {"Weekday", new List<int>
+                        {
+                            // Monday-Thursday
+                            7, 18
+                        }
+                    },
+                    {"Friday", new List<int>
+                        {
+                            // Friday
+                            7, 17
+                        }
+                    },
+                    {"Saturday", new List<int>
+                        {
+                            // Saturday
+                            10, 14
+                        }
+                    },
+                    {"Sunday", new List<int>
+                        {
+                            // Sundays
+                            0,0
+                        }
+                    }
+                }
+
+
             }
+
 
         };
 
