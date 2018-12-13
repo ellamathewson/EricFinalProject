@@ -75,7 +75,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Salsa\'s",
-            "Global Grill",
+            "Global Grille",
             "Crossroads",
             "Nathan\'s",
             "Brick City",
@@ -86,7 +86,6 @@
             "Commons",
             "Midnight Oil",
             "Java Wally\'s",
-            "The Market",
             "Hissho Sushi",
             "Ctrl Alt DELi",
             "Artesano"});
