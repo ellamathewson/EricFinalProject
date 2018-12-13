@@ -71,25 +71,25 @@ namespace FinalProject
                     {"Weekday", new List<int>
                         {
                             // Monday-Thursday
-                            11, 21
+                            11, 24
                         }
                     },
                     {"Friday", new List<int>
                         {
                             // Friday
-                            11, 20
+                            11, 24
                         }
                     },
                     {"Saturday", new List<int>
                         {
                             // Saturday
-                            12, 20
+                            12, 24
                         }
                     },
                     {"Sunday", new List<int>
                         {
                             // Sundays
-                            0, 0
+                            10, 12
                         }
                     }
                 }
@@ -592,7 +592,7 @@ namespace FinalProject
         private void checkTime(int startTime, int endTime, string name)
         {
             hour = time.Hour;
-            //hour = 8;
+            //hour = 23;
             //debug.Text = hour.ToString();
             
 
