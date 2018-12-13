@@ -25,9 +25,25 @@ namespace FinalProject
 
         DateTime time;
 
+        //nested dictionary from hell
+
+
 
         DayOfWeek dt = DateTime.Today.DayOfWeek;
         //foodAnswer.Text = "the day of the week is " + dt;
+
+        public Dictionary<string, Dictionary<int, int>> restaurant = new Dictionary<string, Dictionary<int, int>>
+        {
+            {
+                "Salsa's", new Dictionary<int, int>
+                {
+                    {11, 21}, // Monday-Thursday
+                    {11, 20 }, // Friday
+                    {12, 20 }, // Saturday
+                    {0, 0 } // Sunday
+                }
+            }
+        };
 
         public Form1()
         {
@@ -47,7 +63,25 @@ namespace FinalProject
 
             //debug.Text = dt.ToString();
 
-            switch (dt)
+            switch(dt)
+            {
+                case DayOfWeek.Monday:
+                case DayOfWeek.Tuesday:
+                case DayOfWeek.Wednesday:
+                case DayOfWeek.Thursday:
+
+                    break;
+                case DayOfWeek.Friday:
+                    break;
+                case DayOfWeek.Saturday:
+                    break;
+                case DayOfWeek.Sunday:
+                    break;
+                default:
+                    break;
+            }
+
+            /* switch (dt)
             {
                 //For weekdays:
                 case DayOfWeek.Monday:
@@ -121,7 +155,7 @@ namespace FinalProject
                 default:
                     foodAnswer.Text = "aaaaah";
                     break;
-            }
+            } */
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -143,8 +177,8 @@ namespace FinalProject
 
         private void checkTime(int startTime, int endTime, string name)
         {
-            //hour = time.Hour;
-            hour = 8;
+            hour = time.Hour;
+            //hour = 8;
             //debug.Text = hour.ToString();
             
 
