@@ -19,7 +19,7 @@ namespace FinalProject
         Boolean peakTime = false;
 
         string answer;
-        DateTime hourTime = new DateTime();
+        //DateTime hourTime = new DateTime();
         int hour;
         //foodAnswer.Text = hour.ToString();
 
@@ -60,13 +60,13 @@ namespace FinalProject
                     checkTime(11, 23, "Beanz");
                     checkTime(7, 14, "Brick City");
                     checkTime(7, 21, "College Grind");
-                    checkTime(11, 0, "Commons");
+                    checkTime(11, 24, "Commons");
                     checkTime(7, 20, "Ctrl Alt DELi");
                     checkTime(11, 21, "Hissho Sushi ");
                     checkTime(11, 20, "Global Grill");
                     checkTime(7, 20, "Gracie's");
                     checkTime(7, 23, "Java Wally's");
-                    checkTime(7, 0, "Midnight Oil");
+                    checkTime(7, 24, "Midnight Oil");
                     break;
                 case DayOfWeek.Friday:
                     checkTime(7, 17, "Artesano");
@@ -76,12 +76,12 @@ namespace FinalProject
                     checkTime(7, 14, "Brick City");
                     checkTime(7, 21, "College Grind");
                     checkTime(7, 18, "Ctrl Alt DELi");
-                    checkTime(11, 0, "Commons");
+                    checkTime(11, 24, "Commons");
                     checkTime(11, 20, "Hissho Sushi");
                     checkTime(11, 20, "Global Grill");
                     checkTime(7, 20, "Gracie's");
                     checkTime(7, 21, "Java Wally's");
-                    checkTime(7, 0, "Midnight Oil");
+                    checkTime(7, 24, "Midnight Oil");
                     break;
 
                 case DayOfWeek.Saturday:
@@ -89,7 +89,7 @@ namespace FinalProject
                     {
                         foodAnswer.Text = answer + closed;
                     } else { 
-                    checkTime(12, 0, "Commons");
+                    checkTime(12, 24, "Commons");
                     checkTime(12, 20, "Salsa's");
                     checkTime(7, 18, "Artesano");
                     checkTime(11, 23, "Beanz");
@@ -98,7 +98,7 @@ namespace FinalProject
                     checkTime(11, 15, "Global Grill");
                     checkTime(7, 20, "Gracie's");
                     checkTime(11, 21, "Java Wally's");
-                    checkTime(10, 0, "Midnight Oil");
+                    checkTime(10, 24, "Midnight Oil");
                     }
                     break;
 
@@ -107,12 +107,12 @@ namespace FinalProject
                     {
                         foodAnswer.Text = answer + closed;
                     } else { 
-                    checkTime(12, 0, "Commons");
+                    checkTime(12, 24, "Commons");
                     checkTime(9, 21, "College Grind");
                     checkTime(12, 20, "Crossroads");
                     checkTime(11, 19, "Gracie's");
                     checkTime(11, 21, "Java Wally's");
-                    checkTime(10, 0, "Midnight Oil");
+                    checkTime(10, 24, "Midnight Oil");
                     }
                     break;
 
@@ -143,7 +143,8 @@ namespace FinalProject
 
         private void checkTime(int startTime, int endTime, string name)
         {
-            hour = Convert.ToInt32(time);
+            //hour = time.Hour;
+            hour = 8;
             //debug.Text = hour.ToString();
             
 
@@ -151,37 +152,33 @@ namespace FinalProject
             {
                 peakTime = true;
             }
-            else { peakTime = false; }
-
-            if (peakTime == true)
-            {
-                //debug.Text = "It is peak hours";
-            }
             else
             {
-                //debug.Text = "It is not peak hours";
+                peakTime = false;
             }
 
-
-            if (startTime <= hour && hour <= endTime) //add restaurant name
+            if (startTime <= hour && hour < endTime)
             {
                 //debug.Text = peakTime.ToString();
                 if (peakTime == true)
                 {
                     foodAnswer.Text = answer + open + longLine;
-                    debug.Text = hour.ToString();
+                    //debug.Text = hour.ToString();
                 }
-                else
+                else if (peakTime == false)
                 {
                     foodAnswer.Text = answer + open + shortLine;
-                    debug.Text = hour.ToString();
+                    //debug.Text = hour.ToString();
                 }
+
             }
-            else
+            else 
             {
                 foodAnswer.Text = answer + closed;
-                debug.Text = time.ToString();
+                //debug.Text = hour.ToString();
+                
             }
+            
         }
     }
 }
