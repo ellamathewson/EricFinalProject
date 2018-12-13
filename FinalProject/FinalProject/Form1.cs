@@ -32,15 +32,53 @@ namespace FinalProject
         DayOfWeek dt = DateTime.Today.DayOfWeek;
         //foodAnswer.Text = "the day of the week is " + dt;
 
-        public Dictionary<string, Dictionary<int, int>> restaurant = new Dictionary<string, Dictionary<int, int>>
+        public Dictionary<string, Dictionary<string, List<int>>> restaurant = new Dictionary<string, Dictionary<string, List<int>>>
         {
             {
-                "Salsa's", new Dictionary<int, int>
+                "Salsa's", new Dictionary<string, List<int>>
                 {
-                    {11, 21}, // Monday-Thursday
-                    {11, 20 }, // Friday
-                    {12, 20 }, // Saturday
-                    {0, 0 } // Sunday
+                    {"Monday", new List<int>
+                        {
+                            // Monday-Thursday
+                            11, 21
+                        }
+                    },
+                    {"Tuesday", new List<int>
+                        {
+                            // Monday-Thursday
+                            11, 21
+                        }
+                    },
+                    {"Wednesday", new List<int>
+                        {
+                            // Monday-Thursday
+                            11, 21
+                        }
+                    },
+                    {"Thursday", new List<int>
+                        {
+                            // Monday-Thursday
+                            11, 21
+                        }
+                    },
+                    {"Friday", new List<int>
+                        {
+                            // Friday
+                            11, 20 
+                        }
+                    },
+                    {"Saturday", new List<int>
+                        {
+                            // Monday-Thursday
+                            12, 20 
+                        }
+                    },
+                    {"Sunday", new List<int>
+                        {
+                            // Monday-Thursday
+                            0, 0 
+                        }
+                    }
                 }
             }
         };
@@ -62,6 +100,7 @@ namespace FinalProject
             answer = comboBox1.Text;
 
             //debug.Text = dt.ToString();
+            
 
             switch(dt)
             {
@@ -69,6 +108,9 @@ namespace FinalProject
                 case DayOfWeek.Tuesday:
                 case DayOfWeek.Wednesday:
                 case DayOfWeek.Thursday:
+                    int startTime = restaurant[answer][dt.ToString()][0];
+                    int endTime = restaurant[answer][dt.ToString()][1];
+                    checkTime(startTime, endTime, answer);
 
                     break;
                 case DayOfWeek.Friday:
@@ -80,82 +122,6 @@ namespace FinalProject
                 default:
                     break;
             }
-
-            /* switch (dt)
-            {
-                //For weekdays:
-                case DayOfWeek.Monday:
-                case DayOfWeek.Tuesday:
-                case DayOfWeek.Wednesday:
-                case DayOfWeek.Thursday:
-                    checkTime(11, 21, "Salsa's");
-                    checkTime(10, 22, "Crossroads");
-                    checkTime(7, 18, "Artesano");
-                    checkTime(11, 23, "Beanz");
-                    checkTime(7, 14, "Brick City");
-                    checkTime(7, 21, "College Grind");
-                    checkTime(11, 24, "Commons");
-                    checkTime(7, 20, "Ctrl Alt DELi");
-                    checkTime(11, 21, "Hissho Sushi ");
-                    checkTime(11, 20, "Global Grill");
-                    checkTime(7, 20, "Gracie's");
-                    checkTime(7, 23, "Java Wally's");
-                    checkTime(7, 24, "Midnight Oil");
-                    break;
-                case DayOfWeek.Friday:
-                    checkTime(7, 17, "Artesano");
-                    checkTime(11, 20, "Salsa's");
-                    checkTime(11, 23, "Beanz");
-                    checkTime(10, 22, "Crossroads");
-                    checkTime(7, 14, "Brick City");
-                    checkTime(7, 21, "College Grind");
-                    checkTime(7, 18, "Ctrl Alt DELi");
-                    checkTime(11, 24, "Commons");
-                    checkTime(11, 20, "Hissho Sushi");
-                    checkTime(11, 20, "Global Grill");
-                    checkTime(7, 20, "Gracie's");
-                    checkTime(7, 21, "Java Wally's");
-                    checkTime(7, 24, "Midnight Oil");
-                    break;
-
-                case DayOfWeek.Saturday:
-                    if (answer == "Crossroads" || answer == "Brick City"|| answer == "Ctrl Alt DELi" ) //add restaurant name
-                    {
-                        foodAnswer.Text = answer + closed;
-                    } else { 
-                    checkTime(12, 24, "Commons");
-                    checkTime(12, 20, "Salsa's");
-                    checkTime(7, 18, "Artesano");
-                    checkTime(11, 23, "Beanz");
-                    checkTime(9, 21, "College Grind");
-                    checkTime(12, 20, "Hissho Sushi");
-                    checkTime(11, 15, "Global Grill");
-                    checkTime(7, 20, "Gracie's");
-                    checkTime(11, 21, "Java Wally's");
-                    checkTime(10, 24, "Midnight Oil");
-                    }
-                    break;
-
-                case DayOfWeek.Sunday:
-                    if (answer == "Salsa's" || answer == "RITZ" || answer == "Brick City" || answer == "Artesano" || answer == "Beanz"|| answer == "Brick City" || answer == "Ctrl Alt DELi" || answer == "Hissho Sushi" || answer == "Global Grill") //add restaurant name
-                    {
-                        foodAnswer.Text = answer + closed;
-                    } else { 
-                    checkTime(12, 24, "Commons");
-                    checkTime(9, 21, "College Grind");
-                    checkTime(12, 20, "Crossroads");
-                    checkTime(11, 19, "Gracie's");
-                    checkTime(11, 21, "Java Wally's");
-                    checkTime(10, 24, "Midnight Oil");
-                    }
-                    break;
-
-
-
-                default:
-                    foodAnswer.Text = "aaaaah";
-                    break;
-            } */
         }
 
         private void Form1_Load(object sender, EventArgs e)
