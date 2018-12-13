@@ -162,19 +162,19 @@ namespace FinalProject
                 //debug.Text = peakTime.ToString();
                 if (peakTime == true)
                 {
-                    foodAnswer.Text = answer + open + longLine;
+                    foodAnswer.Text = name + open + longLine;
                     //debug.Text = hour.ToString();
                 }
                 else if (peakTime == false)
                 {
-                    foodAnswer.Text = answer + open + shortLine;
+                    foodAnswer.Text = name + open + shortLine;
                     //debug.Text = hour.ToString();
                 }
 
             }
             else 
             {
-                foodAnswer.Text = answer + closed;
+                foodAnswer.Text = name + closed;
                 //debug.Text = hour.ToString();
                 
             }
