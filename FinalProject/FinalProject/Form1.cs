@@ -12,28 +12,30 @@ namespace FinalProject
 {
     public partial class Form1 : Form
     {
+       //Strings for displying in label
         string closed = " is closed.";
         string open = " is open";
         string longLine = " and the line is long. Just don't go.";
         string shortLine = " and the line is short. GO!";
+
+        //boolean for peak time
         Boolean peakTime = false;
 
+        //string for day of week
         string dayOfWeek;
 
-
+        //values for answer and hour
         string answer;
-        //DateTime hourTime = new DateTime();
         int hour;
-        //foodAnswer.Text = hour.ToString();
 
+        //for getting hour 
         DateTime time;
 
-        //nested dictionary from hell
-
-
+        //gets current day of week
         DayOfWeek dt = DateTime.Today.DayOfWeek;
-        //foodAnswer.Text = "the day of the week is " + dt;
 
+        //nested dictionary from hell
+        //Dictionary holds restaurant name, and each name has days that have different hours represented by ints
         public Dictionary<string, Dictionary<string, List<int>>> restaurant = new Dictionary<string, Dictionary<string, List<int>>>
         {
             {
@@ -509,45 +511,25 @@ namespace FinalProject
         {
             InitializeComponent();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         
-
+        //when dropdown menu is changed
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //gets selected value
             answer = comboBox1.Text;
+            //checks day of week 
             checkDayOfWeek();
 
+            //start time grabs from the dictionary the first int in array in dictionary
+            int startTime = restaurant[answer][dayOfWeek][0];
+            //end time grabs from the dictionary the second int in the array in dictionary
+            int endTime = restaurant[answer][dayOfWeek][1];
+            //runs function by passing in these values
+            checkTime(startTime, endTime, answer);
 
-            //debug.Text = dt.ToString();
-
-
-            switch (dt)
-            {
-                case DayOfWeek.Monday:
-                case DayOfWeek.Tuesday:
-                case DayOfWeek.Wednesday:
-                case DayOfWeek.Thursday:
-                    int startTime = restaurant[answer][dayOfWeek][0];
-                    int endTime = restaurant[answer][dayOfWeek][1];
-                    checkTime(startTime, endTime, answer);
-
-                    break;
-                case DayOfWeek.Friday:
-                    break;
-                case DayOfWeek.Saturday:
-                    break;
-                case DayOfWeek.Sunday:
-                    break;
-                default:
-                    break;
-            }
         }
 
+        //Checks day of the week with a switch statement, sets string to value to be able to grab it from the dictionary
         public void checkDayOfWeek()
         {
             switch(dt)
@@ -572,30 +554,27 @@ namespace FinalProject
             }
         }
 
+        //When form loads, grabs the current time and displays it on the screen
         private void Form1_Load(object sender, EventArgs e)
         {
             time = DateTime.Now;
             label1.Text = time.ToString("h:mm");
+           
         }
 
+        //Timer continues to update when on the form
         private void timer_Tick(object sender, EventArgs e)
         {
-            
             label1.Text = DateTime.Now.ToString("h:mm");
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        //Function to check time and compare it to hours
         private void checkTime(int startTime, int endTime, string name)
         {
+            //sets hour equal to current hour
             hour = time.Hour;
-            //hour = 23;
-            //debug.Text = hour.ToString();
-            
 
+            //compares hour to peak time ints
             if ((hour >= 11 && hour <= 13) || (hour >= 17 && hour <= 19))
             {
                 peakTime = true;
@@ -605,28 +584,24 @@ namespace FinalProject
                 peakTime = false;
             }
 
+            //if the hour is in between the values so the place is open
             if (startTime <= hour && hour < endTime)
             {
-                //debug.Text = peakTime.ToString();
+                //if the peak time evaluates to true then change food answers text accordingly 
                 if (peakTime == true)
                 {
                     foodAnswer.Text = name + open + longLine;
-                    //debug.Text = hour.ToString();
                 }
                 else if (peakTime == false)
                 {
                     foodAnswer.Text = name + open + shortLine;
-                    //debug.Text = hour.ToString();
                 }
 
             }
             else 
             {
-                foodAnswer.Text = name + closed;
-                //debug.Text = hour.ToString();
-                
+                foodAnswer.Text = name + closed;                
             }
-            
         }
     }
 }
